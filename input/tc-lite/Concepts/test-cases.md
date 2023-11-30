@@ -63,7 +63,7 @@ supply all of them for three different cases, which are executed independently.
 
 # Other Sources of Arguments
 
-Use of `[TestCase]` for parameterized tests is convenient because the intended arguments
+Use of `[TestCase]` for ../../../theme/input/Shared/_ChildPages.cshtml ../../../theme/input/Shared/_ChildPagesItem.cshtmlparameterized tests is convenient because the intended arguments
 are easily visible. There are, however, some inconveniences:
 
 * .NET itself limits the kinds of arguments that may be used to construct an attribute, so some arguments cannot be specified in this way.

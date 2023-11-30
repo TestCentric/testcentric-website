@@ -1,5 +1,5 @@
 Title: Overview
-Description: Provides a <a href="overview">general overview</a> of the TestCentric Engine.
+Description: Provides a general overview of the TestCentric Engine.
 Order: 1
 ---
 # About TestCentric Engine

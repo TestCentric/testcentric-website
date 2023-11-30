@@ -1,5 +1,5 @@
 Title: TC-Lite API
-Description: Types, Properties and Methods forming the <a href="/tc-lite/api">TC-Lite API</a>
+Description: Types, Properties and Methods forming the TC-Lite API.
 Order: 5
 ---
 <!--

@@ -1,5 +1,5 @@
 Title: Overview
-Description: Provides a <a href="overview">general overview</a> of the project.
+Description: Provides a general overview of the TC-Lite framework.
 Order: 1
 ---
 

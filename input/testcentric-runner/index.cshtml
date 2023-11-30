@@ -1,7 +1,17 @@
 Title: TestCentric Runner
-Description: TestCentric Runner is a GUI test runner aimed at eventually supporting a range of .NET testing frameworks. As of the current 1.4.0 release, it supports NUnit tests.
 Order: 1
 ---
 <div class="notice">
     Version 2 Documentation. <a href="/testcentric-gui-version1">View legacy version 1 Documentation.</a>
 </div>
+
+@foreach (IDocument child in Model.GetChildren().OrderBy(x => x.Get<int>(Keys.Order, 1000)))
+{
+    <h2>@(child.GetString(Keys.Title))</h2>
+    if (child.ContainsKey("Description"))
+    {
+        <p>@Html.Raw(child.GetString("Description"))</p>
+    }
+
+    @Html.Partial("_ChildPages", child)
+}

@@ -1,4 +1,4 @@
-Description: Displays the <a href="license.html">Tc-Lite license</a>.
+Description: Displays the Tc-Lite license.
 Order: 10
 ---
 Copyright (c) 2020 Charlie Poole

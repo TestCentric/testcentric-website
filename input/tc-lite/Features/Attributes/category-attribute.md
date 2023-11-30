@@ -5,7 +5,7 @@ Description: Allows tagging tests with a category.
 The **Category** attribute allows tests to be grouped arbitrarily, across the entire assembly.
 Either individual test cases or fixtures may be identified as belonging to a particular category.
 When you run tests under **TC-Lite**, you may specify categories to be included in or excluded
-from the test run using the `--where` option.
+from the test run using the `--where` option.../../../../theme/input/Shared/_ChildPages.cshtml ../../../../theme/input/Shared/_ChildPagesItem.cshtml
 
 # Example
 

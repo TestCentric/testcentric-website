@@ -1,5 +1,5 @@
 Title: Command Line
-Description: Displays the runner <a href="command-line.html">command-line options</a>
+Description: Displays the runner command-line options.
 Order: 4
 ---
 **TestCentric** is invoked from the command line as follows:

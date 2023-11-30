@@ -2,18 +2,13 @@
 @* The document for the child page is passed in as the model *@
 
 @{
-    string excerpt = Model.GetString(Keys.Excerpt);
     string description = Model.GetString("Description");
     <div class="p-3 mb-2 bg-light page-box">
-        <h4>@Html.DocumentLink(Model)</h4>
+        <h2>@Html.DocumentLink(Model)</h2>
 
         @if (!string.IsNullOrEmpty(description))
         {
             <div class="font-size-sm">@Html.Raw(description)</div>
-        }
-        else if (!string.IsNullOrEmpty(excerpt))
-        {
-            <div class="font-size-sm">@Html.Raw(excerpt)</div>
         }
 
         @{
@@ -23,14 +18,18 @@
                 .ToDocumentList();
             if (!Model.GetBool(SiteKeys.NoChildPages) && children.Count > 0)
             {
-                //<ul class="list-inline border-top mt-2 pt-2 small">
-                    @foreach (IDocument child in children)
+                <table style="margin: 0 2em">
+                @foreach (IDocument child in children)
+                {
+                    <tr>
+                    <th>@Html.DocumentLink(child)</th>
+                    @if (child.ContainsKey("Description"))
                     {
-                        //<li class="list-inline-item">
-                            <h3>@Html.DocumentLink(child)</h3>
-                        //</li>
+                        <td style="padding: 0 2em">@Html.Raw(child.GetString("Description"))</td>
                     }
-                //</ul>
+                    </tr>
+                }
+                </table>
             }
         }
     </div>

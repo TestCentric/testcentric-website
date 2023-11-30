@@ -1,5 +1,5 @@
 Title: Overview
-Description: Provides a <a href="overview.html">general overview</a> of how Pluggable Agents work.
+Description: Provides a general overview of how Pluggable Agents work.
 Order: 1
 ---
 With Version 2.x of the TestCentric runner, all test execution is handled by an agent. Currently, a separate agent instance is used for each test assembly. If multiple agents are able to run a particular test assembly, the user may select the desired agent.

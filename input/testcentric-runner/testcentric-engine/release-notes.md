@@ -1,5 +1,5 @@
 Title: Release Notes
-Description: Display the Engine <a href="release-notes.html">release notes</a>
+Description: Displays the Engine release notes.
 Order: 9
 ---
 

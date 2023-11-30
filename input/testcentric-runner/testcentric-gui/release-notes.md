@@ -1,4 +1,4 @@
-Description: Displays the Runner <a href="release-notes.html">release notes</a>
+Description: Displays the GUI Runner release notes.
 Order: 9
 ---
 

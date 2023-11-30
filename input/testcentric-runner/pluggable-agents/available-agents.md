@@ -1,5 +1,5 @@
 Title: Available Agents
-Description: Lists aall <a href="available-agents.html">available agents</a>
+Description: Lists all the agents we provide.</a>
 Order: 2
 ---
 # Bundled Agents
