@@ -18,7 +18,7 @@ I left NUnit in order to pursue some new directions in software tooling and Test
 
 NUnit V2 came with a GUI runner in addition to the console runner. Beginning with NUnit 3, no GUI runner was provided. The TestCentric Runner was created to fill that gap.
 
-All our development work is now focused on Version 2 of the runner. The latest release is 2.0.0-beta2. Documentation is available [here](/testcentric-gui)
+All our development work is now focused on Version 2 of the runner. The latest release is 2.0.0-beta2. Documentation is available [here](/testcentric-runner)
 
 Version 1 of the TestCentric GUI is considered legacy but is still availble. It looks and works very much like the NUnit V2 GUI. Of course, it support NUnit 3 tests and - using the standard NUnit extension - NUnit V2 tests as well. The final version of that runner was 1.6.2. Documentation [here](/testcentric-gui-version1).
 

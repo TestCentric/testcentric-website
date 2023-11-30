@@ -1,3 +1,13 @@
 SiteTitle: TestCentric
 Logo: /img/NewTestCentricLogo.png
 sass-primary: Green
+#ApiPath: tc-lite/api
+#SourceFiles:
+#{
+#    "../tc-lite/src/tclite/*.cs",
+#    "../tc-lite/src/tclite/Attributes/*.cs",
+#    "../tc-lite/src/tclite/Constraints/*.cs", 
+#    "../tc-lite/src/tclite/Interfaces/*.cs",
+#    "../tc-lite/src/tclite/Runners/TestRunner.cs"
+#}
+#IncludeGlobalNamespace: false
