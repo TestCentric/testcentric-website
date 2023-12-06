@@ -4,7 +4,7 @@ Order: 2
 ---
 # Bundled Agents
 
-The following agents are delivered as package dependencies to the TestCentric Runner version 2.0.0-beta2 and will be immediately available after installing the runner. You may remove any agent you do not use and install others you need.
+The following agents are delivered as package dependencies to the TestCentric Runner version 2.0.0-beta4 and will be immediately available after installing the runner. You may remove any agent you do not use and install others you need.
 
 ## Net 4.6.2 Agent
 
@@ -25,9 +25,17 @@ The following agents are delivered as package dependencies to the TestCentric Ru
 ## Net 7.0 Agent
 
 <table>
-<tr><th>Platform:</th><td>.NET 5.0</td></tr>
-<tr><th>NuGet Package:</th><td>Nunit.Extension.Net50PluggableAgent</td></tr>
-<tr><th>Chocolatey Package:&nbsp;</th><td>nunit-extension-net50-pluggable-agent</td></tr>
+<tr><th>Platform:</th><td>.NET 7.0</td></tr>
+<tr><th>NuGet Package:</th><td>Nunit.Extension.Net70PluggableAgent</td></tr>
+<tr><th>Chocolatey Package:&nbsp;</th><td>nunit-extension-net70-pluggable-agent</td></tr>
+</table>
+
+## Net 8.0 Agent
+
+<table>
+<tr><th>Platform:</th><td>.NET 8.0</td></tr>
+<tr><th>NuGet Package:</th><td>Nunit.Extension.Net80PluggableAgent</td></tr>
+<tr><th>Chocolatey Package:&nbsp;</th><td>nunit-extension-net80-pluggable-agent</td></tr>
 </table>
 
 # Additional Agents
@@ -67,14 +75,6 @@ The following are additional Pluggable Agents available from the TestCentric pro
 </table>
 
 ## Net 5.0 Agent
-
-<table>
-<tr><th>Platform:</th><td>.NET 5.0</td></tr>
-<tr><th>NuGet Package:</th><td>Nunit.Extension.Net50PluggableAgent</td></tr>
-<tr><th>Chocolatey Package:&nbsp;</th><td>nunit-extension-net50-pluggable-agent</td></tr>
-</table>
-
-## Net 8.0 Agent
 
 <table>
 <tr><th>Platform:</th><td>.NET 5.0</td></tr>

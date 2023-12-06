@@ -16,7 +16,7 @@
                 .GetChildrenOf(Model)
                 .Where(x => !x.ContainsKey(Keys.RedirectTo))
                 .ToDocumentList();
-            if (!Model.GetBool(SiteKeys.NoChildPages) && children.Count > 0)
+            if (!Model.GetBool("NoChildPages") && children.Count > 0)
             {
                 <table style="margin: 0 2em">
                 @foreach (IDocument child in children)

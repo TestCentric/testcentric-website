@@ -16,7 +16,7 @@ IsPost: false
                 string summaryImage = post.GetString("SummaryImage")
                     ?? post.GetString("OGImage");
                 string summaryText = post.GetString("SummaryText")
-                    ?? post.GetString(Statiq.Html.HtmlKeys.Excerpt);
+                    ?? post.GetString(Keys.Excerpt);
                 string postMeta = $"Published: {post.GetDateTime(WebKeys.Published).ToLongDateString()}";
                 if (post.ContainsKey("Updated"))
                     postMeta += $", Updated: {post.GetDateTime("Updated").ToLongDateString()}";

@@ -270,11 +270,9 @@ implementations for greater efficiency.
 # See Also
 
 * [Overview of Test Cases][1]
-* [TestCaseData API][2]
-* [TestCase Attribute][3]
-* [TestCaseFactory Attribute][4]
+* [TestCase Attribute][2]
+* [TestCaseFactory Attribute][3]
 
 [1]: /tc-lite/Concepts/test-cases.html
-[2]: /tc-lite/api/TestCaseData/
-[3]: /tc-lite/Features/Attributes/testcase-attribute.html
-[4]: /tc-lite/Features/Attributes/testcasefactory-attribute.html
+[2]: /tc-lite/Features/Attributes/testcase-attribute.html
+[3]: /tc-lite/Features/Attributes/testcasefactory-attribute.html

@@ -17,8 +17,7 @@ The 1.x version of the TestCentric GUI was intended to pretty much look like
 the original NUnit GUI. It used a lot of code from the NUnit GUI but had its
 test-running functions modified to work with NUnit 3.0.
 
-Using a separate procePostSources: "{articles,technical}/*"
-ss per test assembly, the GUI is able to run NUnit Tests
+Using a separate process per test assembly, the GUI is able to run NUnit Tests
 targeting .NET Framework 2.0 through 4.8, .NET Core 1.0 through 3.1 and .NET 5.0,
 all in the same test run. At the time of its release, it was the only standalone
 runner able to do so.
@@ -35,8 +34,7 @@ version has been updated to become the new face of the application, as shown in
 _Image 1_.
 
 <figure>
-  <img src="/images/TePostSources: "{articles,technical}/*"
-stCentricGui1.png">
+  <img src="/images/TestCentricGui1.png">
   <figcaption>Image 1</figcaption>
 </figure>
 

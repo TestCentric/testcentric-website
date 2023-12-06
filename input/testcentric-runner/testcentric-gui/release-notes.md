@@ -2,7 +2,35 @@ Description: Displays the GUI Runner release notes.
 Order: 9
 ---
 
-### TestCentric Runner for NUnit 2.0.0-beta2- September 3, 2023
+### TestCentric Runner for NUnit 2.0.0-beta4 - November 22, 2023
+
+This release incorporates an agent for running .NET 8.0 tests.
+
+#### Build
+
+- #1031 Reference beta4 release of engine and other components
+
+#### Feature
+
+- #1029 Include the .NET 8.0 agent with the GUI
+
+### TestCentric Runner for NUnit 2.0.0-beta3-1 - October 24, 2023
+
+This release fixes a critical error in the original beta3 release, which is now deprecated.
+
+#### Bug
+
+- #1003 Beta3 can't be installed on some machines
+
+### TestCentric Runner for NUnit 2.0.0-beta3 - September 3, 2023
+
+This release completes the elimination of dependencies on the NUnit engine.
+
+#### Feature
+
+- #997 Update dependencies to use agents with TestCentric.Extension prefix
+
+### TestCentric Runner for NUnit 2.0.0-beta2 - September 3, 2023
 
 This release is part of a group of related releases:
 

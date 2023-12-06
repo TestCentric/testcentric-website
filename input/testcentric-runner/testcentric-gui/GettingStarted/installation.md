@@ -4,7 +4,7 @@ Order: 1
 ---
 # Prerequisites
 
-The GUI itself runs under the .NET Framework version 4.6.2 or later, which must be installed on the machine. If you want tests to run under other runtimes, those runtimes must also be installed. The runner is bundled with agents supporting test execution under .NET 4.6.2, .NET 6.0 and .NET 7.0. Tests targeting earlier runtimes will use an installed higher version. Additional runtimes are supported through use of Pluggable Agent extensions, which may be downloaded and installed separately.
+The GUI itself runs under the .NET Framework version 4.6.2 or later, which must be installed on the machine. If you want tests to run under other runtimes, those runtimes must also be installed. The runner is bundled with agents supporting test execution under .NET 4.6.2, .NET 6.0, .NET 7.0 and .NET 8.0. Tests targeting earlier runtimes will use an installed higher version. Additional runtimes are supported through use of Pluggable Agent extensions, which may be downloaded and installed separately.
 
 # Choosing a Package
 

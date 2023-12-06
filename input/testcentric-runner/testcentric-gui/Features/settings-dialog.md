@@ -1,19 +1,18 @@
 Description: Displays settings that control TestCentric and allows changing them.
-Order: 5
+Order: 9
 ---
-
-<!-- Page-specific styles -->
-<style>
-  img {float:right; margin-left: 20px; margin-bottom: 20px; max-width: 500px}
-</style>
 
 <div class="notice">
     Page under development. Needs revision for TestCentric GUI Version 2.
 </div>
 
+---
+
 # Gui Settings - General
 
-![Settings Dialog](../img/generalSettings.png)
+---
+
+<img class="float-right" alt="Settings Dialog" src="../img/generalSettings.png" />
 
 ## Gui Display
 
@@ -41,9 +40,13 @@ If this is checked, the GUI will load the last file opened unless it is run with
 
 <!-- Gui Settings - Tree Display -->
 
+---
+
 # Gui Settings - Tree Display
 
-![Tree Display Settings](../img/treeDisplaySettings.png)
+---
+
+<img class="float-right" alt="Tree DisplaySettings" src="../img/treeDisplaySettings.png" />
 
 ## Tree View
 
@@ -74,9 +77,13 @@ If this is checked, the tree includes checkboxes, which may be used to select mu
 
 <!-- Gui Settings - Text Output -->
 
+---
+
 # Gui Settings - Text Output
 
-![Text Output Settings](../img/textOutputSettings.png)
+---
+
+<img class="float-right" alt="Text Output Settings" src="../img/textOutputSettings.png" />
 
 ## Test Case Labels
 
@@ -88,9 +95,13 @@ The selected setting controls the display of labels for each test in the output 
 
 <!-- Gui Settings - Assembly Reload -->
 
+---
+
 # Gui Settings - Assembly Reload
 
-![Reload Settings](../img/assemblyReloadSettings.png)
+---
+
+<img class="float-right" alt="Reload Settings" src="../img/assemblyReloadSettings.png" />
 
 ## Assembly Reload
 
@@ -112,9 +123,13 @@ If this is checked, any test results are cleared from the tree whenever a Reload
 
 <!-- Engine Settings - Advanced -->
 
+---
+
 # Engine Settings - Advanced
 
-![Advanced Settings](../img/advancedSettings.png)
+---
+
+<img class="float-right" alt="Advanced Settings" src="../img/advancedSettings.png" />
 
 ## Agent Limit
 

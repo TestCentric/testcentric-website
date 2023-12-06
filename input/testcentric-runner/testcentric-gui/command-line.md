@@ -16,7 +16,7 @@ TESTCENTRIC onetest.dll anothertest.dll --run
 TESTCENTRIC myproject.nunit
 ```
 
-If **TestCentric** is started without any files specified, it automatically loads the most recently loaded test file. Alternatively, you may specify one or more assemblies or supported project types. 
+If **TestCentric** is started without any files specified, it automatically loads the most recently loaded test file. Alternatively, you may specify one or more assemblies or supported project types.
 
 **NOTE:** The types of projects supported depends on the project loader extensions that are installed. Without any extensions installed, only assemblies (`.dll` or `.exe`) are permitted.
 

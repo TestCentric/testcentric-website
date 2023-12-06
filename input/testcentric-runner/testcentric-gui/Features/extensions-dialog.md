@@ -1,18 +1,13 @@
 Description: Lists engine extension points and installed extensions.
-Order: 6
+Order: 10
 ---
-<!-- Page-specific styles -->
-<style>
-  img {float:right; margin-left: 20px; margin-bottom: 20px; max-width: 400px}
-</style>
-
 <div class="notice">
     Page under development. Needs revision for TestCentric GUI Version 2.
 </div>
 
 The Extensions Dialog is displayed using the Tools | Extensions menu item on the main menu. It lists all extension points present in the NUnit engine together with any extensions that have been found and loaded.
 
-![Extensions Dialog](../img/extensionsDialog.png)
+<img class="float-right" alt="Extensions Dialog" src="../img/extensionsDialog.png" />
 
 ### Extension Points
 

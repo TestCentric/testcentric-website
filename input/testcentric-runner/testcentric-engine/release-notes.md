@@ -3,6 +3,42 @@ Description: Displays the Engine release notes.
 Order: 9
 ---
 
+### TestCentric Engine 2.0.0-beta4 - November 22, 2023
+
+#### Breaking Changes
+
+- #162 Move code from TestCentric.Engine.Core if it's only used by the engine
+- #174 Move AbstractTestRunner from Engine.Core to Engine
+
+#### Bug
+
+- #173 Eliminate ITransport interface
+
+#### Build
+
+- #176 Test under the .NET 8.0 agent
+- #179 Update to use beta4 release of engine Api and Core
+
+#### Features
+
+- #26 TestCentric Engine should stand on its own, without depending on the NUnit Engine
+- #127 Eliminate use of BinaryFormatter in TCP protocol.
+- #182 Update to test with .NET 8.0 release
+
+### TestCentric Engine 2.0.0-beta3 - October 22, 2023
+
+This release will focus on separating the testcentric engine from the nunit engine as outlined in https://github.com/orgs/TestCentric/projects/4
+
+#### Breaking Changes
+
+- #134 Create separate project for TestCentric.Engine.Api package
+- #135 Create separate project for TestCentric.Engine.Core package
+- #154 Replace nunit.engine.api with testcentric.engine.api
+
+#### Build
+
+- #137 Use testcentric signing key for all assemblies
+
 ### TestCentric Engine 2.0.0-beta2 - September 3, 2023
 
 This release includes several new features as well as bug fixes.

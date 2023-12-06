@@ -44,6 +44,3 @@ TC-Lite is able to compare single-dimensioned arrays, multi-dimensioned arrays, 
 ### Dictionaries
 
 adds the ability to compare generic collections and dictionaries.
-
-### See also
- * [Assert.AreEqual API](/tc-lite/api/Assert.AreEqual.html)
