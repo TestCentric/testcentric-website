@@ -1,5 +1,6 @@
 Title: Command Buttons
 Order: 3
+Description: Explains the use of each button in the command bar.
 ---
 <img class="float-right" alt="Command Buttons" src="../img/command-buttons.png" />
 

@@ -1,5 +1,6 @@
 Title: Tree Display
 Order: 4
+Description: Describes the Tree Display and it's context menu.
 ---
 <!-- Styling for the table on this page -->
 <style>

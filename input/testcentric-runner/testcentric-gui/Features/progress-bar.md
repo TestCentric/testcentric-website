@@ -1,5 +1,6 @@
 Title: Progress Bar
 Order: 5
+Description: Describes the Progress Bar and Result Summary.
 ---
 <img alt="Progress Bar" class="float-right" src="../img/progressBar.png" />
 

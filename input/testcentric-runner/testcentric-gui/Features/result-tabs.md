@@ -1,5 +1,6 @@
 Title: Result Tabs
 Order: 6
+Description: Describes each of the result tabs on the right side of the display.
 ---
 <div class="notice">
     Under Construction!
@@ -15,7 +16,7 @@ Three tabs along the bottom of the display show the results of running a test.
 
 <img class="float-right" alt="Test Properties Tab" src="../img/testPropertiesTab.png" />
 
-The **Test Properties** tab shows the properties of each test together with the result if the test has been run.
+The **Test Properties** tab shows the properties and OutCome of the currently selected test in the Tree Display.
 
 <p style="clear: both">
 
