@@ -1,10 +1,34 @@
-Title: Running Tests
-Description: How to load and run a set of tests under.
-Order: 3
+Title: Using the GUI
+Description: How to start the GUI, load a set of tests amd execute them,
+Order: 2
 ---
-<div class="notice">
-    Page under development. Needs revision for TestCentric GUI Version 2.
-</div>
+# Starting the GUI
+
+How you start the GUI depends on how you installed it.
+
+## Chocolatey Install
+
+Did you install the chocolatey package? Chocolatey will have installed a small stub program to run the GUI. In that case just type
+
+```cmd
+testcentric
+```
+
+## NuGet Install
+
+If you added the install directory to the path, just type
+
+```cmd
+testcentric
+```
+
+Otherwise, use the path to which the GUI was installed:
+
+```cmd
+<path to the install directory>\testcentric.exe (*)
+```
+
+(*) Of course, you would use a forward slash on Linux.
 
 # Loading Tests
 
@@ -16,7 +40,7 @@ You may also select the file to open from the command-line, by putting it's path
 
 When a test assembly has been loaded, the tests it contains are shown in the tree display.
 
-# Changing How Tests are Displayed
+## Changing How Tests are Displayed
 
 The `Display Format` button lets you choose how tests are displayed. There are three primary choices:
 
@@ -26,11 +50,13 @@ The `Display Format` button lets you choose how tests are displayed. There are t
 
 3. The `Test List` display shows a list of individual test cases. You may group them by Assembly, Fixture, Category, Outcome or duration.
 
-# Using the Run All Button
+# Running Tests
+
+## Using the Run All Button
 
 The simplest way to run tests is to click on the `Run All` button in the toolbar. All your tests will be run.
 
-# Using the Run Selected Button
+## Using the Run Selected Button
 
 First, select the test or tests you want to run in the tree display and then click the `Run Selected` button in the toolbar.
 
@@ -41,15 +67,31 @@ multiple tests. All the tests under each checked item will be executed.
 
 2. When checkboxes are not displayed, `Run Selected` will execute the highlighted test. All the tests under the highlighted tree node are run. Note that you may also use this technique when checkboxes are turned on, but only if no boxes are currently checked.
 
-# Using the Context Menu
+## Using the Context Menu
 
 You may run a test - and any tests under it - by right-clicking on the node in the tree display
 and selecting `Run` in the menu that appears.
 
-# Repeating the Last Run
+## Repeating the Last Run
 
 Click on the `Rerun` toolbar button to repeat the last test run.
 
-# Running Only Failed Tests
+## Running Only Failed Tests
 
 Click on the `Run Failed` button in the toolbar to rerun all tests currently shown as having failed.
+
+# Stopping a Test Run
+
+## Normal Stop
+
+Once a test run begins, the Stop button is enabled. Clicking it initiates a normal stop. We often call this a "cooperative stop" because it requires cooperation from the test framework.
+
+When a Stop is initiated, a command is sent to the framework. The intent is that it should allow all executing tests and all teardowns to complete. No further tests should be started. This usually terminates the run quickly, unless there is a problem like an infinite loop in the test code.
+
+## Forced Stop
+
+As soon as the Stop is initiated, the Stop button text changes to "Kill." The user is able to observe the completion of each test in the GUI and may decide that one of the tests is hung and needs to be stopped forcibly. Clicking "Kill" initiates that process. The framework is expected to terminate all threads, which are running tests and return.
+
+## Last Resort
+
+Some frameworks may not support Forced Stop or it may not work due to a bug. After waiting a period of time (currently 5 seconds) for the run to terminate, the GUI takes the extreme action of unloading all test AppDomains and Processes.

@@ -1,9 +1,6 @@
-Title: Getting Started
-Description: How to install and use the TestCentric GUI.
-Order: 2
+Title: TestCentric GUI
+Order: 1
 ---
-<p>How to install and use the TestCentric GUI.</p>
-
 @foreach (IDocument child in Model.GetChildren().OrderBy(x => x.Get<int>(Keys.Order, 1000)))
 {
     <h2>@(child.GetString(Keys.Title))</h2>

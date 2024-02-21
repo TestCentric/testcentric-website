@@ -1,14 +1,7 @@
 Description: Displays settings that control TestCentric and allows changing them.
 Order: 9
 ---
-
-<div class="notice">
-    Page under development. Needs revision for TestCentric GUI Version 2.
-</div>
-
----
-
-# Gui Settings - General
+# General Settings
 
 ---
 
@@ -38,11 +31,9 @@ Normally, TestCentric checks that files still exist before displaying them in th
 
 If this is checked, the GUI will load the last file opened unless it is run with a specific filename or with the `/noload` parameter.
 
-<!-- Gui Settings - Tree Display -->
-
 ---
 
-# Gui Settings - Tree Display
+# Tree Display Settings
 
 ---
 
@@ -63,23 +54,13 @@ This list box allows selecting the degree of expansion of the tree when tests ar
 
 TestCentric provides four sets of <b>Tree Images</b>, which are used to mark tests in the gui as passing, failing, etc. Use the list box to select the preferred set. A preview of the selected set is displayed.
 
-### Clear results when reloading
-
-If this is checked, an automatic or manual reload will reinitialize all test nodes in the tree (grey display) - if it is not checked, result information for tests that do not seem to have changed will be retained.
-
-### Save visual state of each project
-
-If this is checked, TestCentric saves the state of the tree and restores it when the project is next opened. The information saved includes which branches of the tree are expanded, the selected node, any checked nodes and any category selection.
-
 ### Display a checkbox next to each tree item
 
 If this is checked, the tree includes checkboxes, which may be used to select multiple tests for running. This setting is also available in the **View | Tree** menu.
 
-<!-- Gui Settings - Text Output -->
-
 ---
 
-# Gui Settings - Text Output
+# Text Output Settings
 
 ---
 
@@ -89,19 +70,43 @@ If this is checked, the tree includes checkboxes, which may be used to select mu
 
 The selected setting controls the display of labels for each test in the output window.
 
+* **Off** - No labels are displayed with the text output.
 * **On** - All text in the output window is preceded with the name of the test that produced it. If tests running in parallel produce output, the label is redisplayed as often as necessary.
 * **Before** - Displays a label for every test case when it begins, irrespective of whether any output is produced. In case any output __is__ produced, the label is repeated as necessary, just as for the `On` setting.
-* **Off** - No labels are displayed with the text output.
-
-<!-- Gui Settings - Assembly Reload -->
-
----
-
-# Gui Settings - Assembly Reload
+* **After** - Label end of every test, including pass/fail status. In addition, label any output as for the `On` setting.
+* **Before and After** - Label both start and end of every test. In addition, label any output as forthe `On` setting,
 
 ---
 
-<img class="float-right" alt="Reload Settings" src="../img/assemblyReloadSettings.png" />
+# Assembly Load Settings
+
+---
+
+<img class="float-right" alt="Assembly Load Settings" src="../img/assemblyLoadSettings.png" />
+
+## Agent Limit
+
+Normally, when running tests in separate processes, they are all run in parallel.If the checkbox is checked and the limit is set to a positive value, no more than the specified number of processes will be active at one time.
+
+## Shadow Copy
+
+TestCentric normally uses .Net shadow-copying in order to allow you to edit and recompile assemblies while it is running. Uncheck this box to disable shadow-copy only if you have a particular problem that requires it.
+
+**Note:** If you are tempted to disable shadow copy in order to access files in the same directory as your assembly, you should be aware that there are alternatives. Consider using the `TestContext.TestDirectory` to determine the directory that contains your test assembly.
+
+## Principal Policy
+
+Because TestCentric access current thread's **Principal** before running tests, it is not possible to effectively call `SetPrincipalPolicy()` in a test or in the system being tested.
+
+To remedy this problem, TestCentric can call `SetPrincipalPolicy()` on your behalf. If **Set Principal Policy...** is checked, TestCentric will call it using the `PrincipalPolicy` type selected in the list when it sets up each test **AppDomain**.
+
+---
+
+# Automatic Reload Settings
+
+---
+
+<img class="float-right" alt="Automatic Reload Settings" src="../img/automaticReloadSettings.png" />
 
 ## Assembly Reload
 
@@ -113,36 +118,26 @@ If this is checked, a reload will occur whenever the run button is pressed wheth
 
 If this is checked, assemblies are watched for any change and an automatic reload is initiated.
 
-### Re-run last tests run
+#### Re-run last tests run
 
 If this is checked, tests are re-run whenever a Reload takes place.
+
+### No Automatic Reload
+
+The tests are not reloaded automatically but only when the user initiates a reload.
 
 ### Clear results when reloading
 
 If this is checked, any test results are cleared from the tree whenever a Reload takes place.
 
-<!-- Engine Settings - Advanced -->
+---
+
+# Project Editor Settings
 
 ---
 
-# Engine Settings - Advanced
+<img class="float-right" alt="Project Editor Settings" src="../img/projectEditorSettings.png" />
 
----
+## Project Editor
 
-<img class="float-right" alt="Advanced Settings" src="../img/advancedSettings.png" />
-
-## Agent Limit
-
-Normally, when running tests in separate processes, they are all run in parallel.If the checkbox is checked and the limit is set to a positive value, no more than the specified number of processes will be active at one time.
-
-## Shadow Copy
-
-NUnit normally uses .Net shadow-copying in order to allow you to edit and recompile assemblies while it is running. Uncheck this box to disable shadow-copy only if you have a particular problem that requires it.
-
-**Note:** If you are tempted to disable shadow copy in order to access files in the same directory as your assembly, you should be aware that there are alternatives. Consider using the `TestContext.TestDirectory` to determine the directory that contains your test assembly.
-
-## Principal Policy
-
-Because NUnit access current thread's **Principal** before running tests, it is not possible to effectively call `SetPrincipalPolicy()` in a test or in the system being tested.
-
-To remedy this problem, NUnit can call `SetPrincipalPolicy()` on your behalf. If **Set Principal Policy...** is checked, NUnit will call it using the `PrincipalPolicy` type selected in the list when it sets up each test **AppDomain**.
+This allows you to set the editor for use in examining and modifying NUnit projects (`.nunit` files). Special provision is made for using the **NUnit Project Editor** if it is available and on your path. Otherwise, you may use any text editor to modify the XML in the project file.
